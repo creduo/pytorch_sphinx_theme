@@ -82,32 +82,32 @@
   {% include "fonts.html" %}
 </head>
 
-<div class="container-fluid header-holder tutorials-header" id="header-holder">
-  <nav class="navbar sticky-top navbar-dark fixed-top navbar-expand-lg">
-    <div class="navbar-brand">
-      <a href="{{ theme_variables.external_urls['home'] }}" aria-label="PyTorch">
-        <img src="{{ pathto('_static/images/logo-kr.svg', 1) }}" width="260" height="28" fill="white" />
-      </a>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="navbarSupportedContent" class="navbar-collapse collapse">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a href="//pytorch.kr/" target="_self" class="nav-link">홈</a></li>
-        <li class="nav-item">
-          <a href="//tutorials.pytorch.kr/" target="_self" class="nav-link">튜토리얼</a>
-        </li>
-        <li class="nav-item">
-          <a href="//pytorch.kr/about" target="_self" class="nav-link">
-            소개
-          </a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
 <body class="pytorch-body">
+  <div class="container-fluid header-holder tutorials-header" id="header-holder">
+    <nav class="navbar sticky-top navbar-dark fixed-top navbar-expand-lg">
+      <div class="navbar-brand">
+        <a href="{{ theme_variables.external_urls['home'] }}" aria-label="PyTorch">
+          <img src="{{ pathto('_static/images/logo-kr.svg', 1) }}" width="260" height="28" fill="white" />
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarSupportedContent" class="navbar-collapse collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="//pytorch.kr/" target="_self" class="nav-link">홈</a></li>
+          <li class="nav-item">
+            <a href="//tutorials.pytorch.kr/" target="_self" class="nav-link">튜토리얼</a>
+          </li>
+          <li class="nav-item">
+            <a href="//pytorch.kr/about" target="_self" class="nav-link">
+              소개
+            </a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
   {% block extrabody %} {% endblock %}
 
     {# SIDE NAV, TOGGLES ON MOBILE #}
